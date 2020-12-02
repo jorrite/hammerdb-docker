@@ -20,8 +20,8 @@ redis for Redis
 
 ```bash
 # show help
-docker run webysther/hammerdb
+docker run jorrite/hammerdb
 
 # access cli
-docker run -it webysther/hammerdb ./hammerdbcli
+docker run -it jorrite/hammerdb ./hammerdbcli
 ```
