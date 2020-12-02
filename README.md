@@ -1,4 +1,3 @@
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwebysther%2Fhammerdb-docker.svg?type=shield&style=flat-square)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwebysther%2Fhammerdb-docker?ref=badge_shield)
 [![Software License](https://goo.gl/FU2Kw1)](LICENSE)
 
 # 🐋 Docker for HammerDB
@@ -8,7 +7,7 @@
 Configured and working clients for MS SQL Server, PotsgreSQL, MySQL and Redis.
 
 ```
-docker run -it webysther/hammerdb ./hammerdbcli
+docker run -it jorrite/hammerdb ./hammerdbcli
 
 hammerdb>librarycheck
 tdbc::odbc for MSSQLServer
@@ -26,7 +25,3 @@ docker run webysther/hammerdb
 # access cli
 docker run -it webysther/hammerdb ./hammerdbcli
 ```
-
-## License
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwebysther%2Fhammerdb-docker.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwebysther%2Fhammerdb-docker?ref=badge_large)

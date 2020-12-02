@@ -15,7 +15,7 @@ RUN apt-get install -y unixodbc-dev libgssapi-krb5-2
 ENV PATH="/opt/mssql-tools/bin:${PATH}"
 
 RUN set -ex; \
-# gpg: key 5072E1F5: public key "MySQL Release Engineering <mysql-build@oss.oracle.com>" imported
+  # gpg: key 5072E1F5: public key "MySQL Release Engineering <mysql-build@oss.oracle.com>" imported
   key='A4A9406876FCBD3C456770C88C718D3B5072E1F5'; \
   export GNUPGHOME="$(mktemp -d)"; \
   gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y mysql-community-client="${MYSQL_VERSION
 RUN apt-get install -y libpq-dev
 
 # HammerDB
-ENV HAMMER_VERSION=3.3
+ENV HAMMER_VERSION=4.0
 ENV HAMMER_URI=https://github.com/TPC-Council/HammerDB/releases/download
 
 RUN apt-get install -y curl
