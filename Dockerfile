@@ -2,7 +2,7 @@ FROM debian:stable-slim
 
 # MySQL driver
 ENV MYSQL_MAJOR 8.0
-ENV MYSQL_VERSION 8.0.19-1debian9
+ENV MYSQL_VERSION 8.0.22-1debian9
 
 RUN apt-get update && apt-get install --no-install-recommends -y gnupg curl ca-certificates
 
